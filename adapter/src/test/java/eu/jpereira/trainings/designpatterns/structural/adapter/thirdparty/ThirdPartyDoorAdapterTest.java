@@ -24,19 +24,19 @@ import eu.jpereira.trainings.designpatterns.structural.adapter.model.SimpleDoor;
  * @author windows
  * 
  */
-public class ThirdPartyAdapterTest extends DoorTest {
+public class ThirdPartyDoorAdapterTest extends DoorTest {
 
 
 	@Override
 	protected Door createDoorUnderTest() {
-		return new SimpleDoor();
-		//return new ThirdPartyDoorAdaper();
+		//return new SimpleDoor();
+		return new ThirdPartyDoorAdapter();
 	}
 
 	@Override
 	protected String getDefaultDoorCode() {
-		return SimpleDoor.DEFAULT_DOOR_CODE;
-		//return ThirdPartyDoor.DEFAULT_CODE;
+		//return SimpleDoor.DEFAULT_DOOR_CODE;
+		return ThirdPartyDoor.DEFAULT_CODE;
 	}
 
 }

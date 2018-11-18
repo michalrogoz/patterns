@@ -26,9 +26,6 @@ joaomiguel.pereira@gmail.com
 
 737e350e-228b-7272-34ae-3263785c5075
 
-exceptions
-dir
-
 ThirdPartyDoor.java
 file
 
@@ -62,4 +59,14 @@ joaomiguel.pereira@gmail.com
 
 
 2488
+
+ThirdPartyDoorAdapter.java
+file
+0
+
+
+add
+
+exceptions
+dir
 
