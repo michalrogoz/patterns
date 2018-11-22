@@ -26,14 +26,14 @@ joaomiguel.pereira@gmail.com
 
 737e350e-228b-7272-34ae-3263785c5075
 
-URLAppender.java
+MessageTruncator.java
 file
 
 
 
 
 2016-02-13T19:56:36.649842Z
-5623b0234de090d74ed78eab4a438464
+6d8619bbb846b20085fce0f67da43881
 2011-10-20T00:23:13.931329Z
 69
 joaomiguel.pereira@gmail.com
@@ -58,7 +58,7 @@ joaomiguel.pereira@gmail.com
 
 
 
-1561
+1664
 
 SocialChannelDecorator.java
 file
@@ -94,14 +94,14 @@ joaomiguel.pereira@gmail.com
 
 1082
 
-MessageTruncator.java
+URLAppender.java
 file
 
 
 
 
 2016-02-13T19:56:36.649842Z
-6d8619bbb846b20085fce0f67da43881
+5623b0234de090d74ed78eab4a438464
 2011-10-20T00:23:13.931329Z
 69
 joaomiguel.pereira@gmail.com
@@ -126,5 +126,12 @@ joaomiguel.pereira@gmail.com
 
 
 
-1664
+1561
+
+WordCensor.java
+file
+0
+
+
+add
 

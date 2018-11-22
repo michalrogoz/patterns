@@ -71,6 +71,7 @@ public class Toaster extends AbstractAppliance {
 		// this.applianceStateBehavior to the return type of the call
 		// Example: this.applianceStateBehavior =
 		// this.applianceStateBehavior.turnOn();
+		this.applianceStateBehavior = applianceStateBehavior.turnOn();
 
 	}
 
@@ -87,6 +88,8 @@ public class Toaster extends AbstractAppliance {
 		// this.applianceStateBehavior to the return type of the call
 		// Example: this.applianceStateBehavior =
 		// this.applianceStateBehavior.turnOff();
+		this.applianceStateBehavior = applianceStateBehavior.turnOff();
+
 
 	}
 
@@ -103,6 +106,7 @@ public class Toaster extends AbstractAppliance {
 		// this.applianceStateBehavior to the return type of the call
 		// Example: this.applianceStateBehavior =
 		// this.applianceStateBehavior.start();
+		this.applianceStateBehavior = applianceStateBehavior.start();
 
 	}
 
@@ -119,5 +123,7 @@ public class Toaster extends AbstractAppliance {
 		// this.applianceStateBehavior to the return type of the call
 		// Example: this.applianceStateBehavior =
 		// this.applianceStateBehavior.stop();
+		this.applianceStateBehavior = applianceStateBehavior.stop();
+
 	}
 }

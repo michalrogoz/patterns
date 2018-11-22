@@ -1,0 +1,49 @@
+10
+
+dir
+0
+http://javatrainings.googlecode.com/svn/designpatterns/trunk/builder/src/main/java/eu/jpereira/trainings/designpatterns/creational/builder/builder
+http://javatrainings.googlecode.com/svn
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+737e350e-228b-7272-34ae-3263785c5075
+
+HtmlReportBodyBuilder.java
+file
+
+
+
+add
+
+JsonReportBodyBuilder.java
+file
+
+
+
+add
+
+XmlReportBodyBuilder.java
+file
+
+
+
+add
+

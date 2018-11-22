@@ -26,7 +26,6 @@ import eu.jpereira.trainings.designpatterns.structural.adapter.model.SimpleDoor;
  */
 public class ThirdPartyDoorAdapterTest extends DoorTest {
 
-
 	@Override
 	protected Door createDoorUnderTest() {
 		//return new SimpleDoor();

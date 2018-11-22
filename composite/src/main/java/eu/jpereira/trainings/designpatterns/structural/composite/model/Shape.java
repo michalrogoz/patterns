@@ -16,6 +16,8 @@
 package eu.jpereira.trainings.designpatterns.structural.composite.model;
 
 
+import java.util.List;
+
 /**
  * @author jpereira
  * 
@@ -27,28 +29,30 @@ public abstract class Shape {
 
 	/**
 	 * If this object is a CompositeShape, return it. Null otherwise.
-	 * 
+	 *
 	 * @return an compositeShape instance if this is an composite, null
-	 *         otherwise
+	 * otherwise
 	 */
 	public CompositeShape asComposite() {
-		//TODO: Implement
-		return null;
+		return this instanceof CompositeShape ? ((CompositeShape) this) : null;
 	}
 
 	/**
 	 * Move a shape in a 2D scale
-	 * 
-	 * @param xIncrement
-	 *            The increment in X axis
-	 * @param yIncremet
-	 *            The increment in the Y axis
+	 *
+	 * @param xIncrement The increment in X axis
+	 * @param yIncremet The increment in the Y axis
 	 */
 	public void move(int xIncrement, int yIncrement) {
 		this.x += xIncrement;
 		this.y += yIncrement;
-		// if is composite, delegate to children
-		//TODO: COmplete
+
+		if (this instanceof CompositeShape) {
+			List<Shape> shapes = ((CompositeShape) this).getShapes();
+			for (Shape shape : shapes) {
+				shape.move(xIncrement, yIncrement);
+			}
+		}
 	}
 
 	/**
@@ -59,8 +63,7 @@ public abstract class Shape {
 	}
 
 	/**
-	 * @param x
-	 *            the x coordinate to set
+	 * @param x the x coordinate to set
 	 */
 	public void setX(int x) {
 		this.x = x;
@@ -74,8 +77,7 @@ public abstract class Shape {
 	}
 
 	/**
-	 * @param y
-	 *            the y coordinate to set
+	 * @param y the y coordinate to set
 	 */
 	public void setY(int y) {
 		this.y = y;
@@ -83,8 +85,10 @@ public abstract class Shape {
 
 	/**
 	 * Each instance of a Shape must know it's type
+	 *
 	 * @return
 	 */
 	public abstract ShapeType getType();
+
 
 }

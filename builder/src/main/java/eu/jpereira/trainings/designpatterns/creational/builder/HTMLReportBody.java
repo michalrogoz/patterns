@@ -8,7 +8,7 @@ public class HTMLReportBody implements ReportBody {
 
 	@Override
 	public Object getAsString() {
-		return this.delegate .toString();
+		return this.delegate.toString();
 	}
 
 	public void putContent(Object content) {

@@ -26,14 +26,39 @@ joaomiguel.pereira@gmail.com
 
 737e350e-228b-7272-34ae-3263785c5075
 
-model
-dir
-
-xml
-dir
-
-json
-dir
+HTMLReportBody.java
+file
+
+
+
+
+2016-02-13T19:56:36.745839Z
+4bdd5a7457a6e8cc13c8d26362579de5
+2011-10-12T00:57:18.833342Z
+23
+joaomiguel.pereira@gmail.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+440
 
 ReportAssembler.java
 file
@@ -69,37 +94,19 @@ joaomiguel.pereira@gmail.com
 
 4504
 
-HTMLReportBody.java
-file
+builder
+dir
 
 
 
-
-2016-02-13T19:56:36.745839Z
-4bdd5a7457a6e8cc13c8d26362579de5
-2011-10-12T00:57:18.833342Z
-23
-joaomiguel.pereira@gmail.com
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-440
+add
+
+json
+dir
+
+model
+dir
+
+xml
+dir
 

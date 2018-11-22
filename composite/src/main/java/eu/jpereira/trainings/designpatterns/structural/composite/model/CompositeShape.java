@@ -15,7 +15,9 @@
  */
 package eu.jpereira.trainings.designpatterns.structural.composite.model;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 
 /**
@@ -32,73 +34,71 @@ public abstract class CompositeShape extends Shape {
 
 	/**
 	 * Remove a shape from this shape childrens
-	 * 
+	 *
 	 * @param shape
-	 *            the shape to remove
+	 * the shape to remove
 	 * @return true if the shape was present and was removed, false if the shape
-	 *         was not present
+	 * was not present
 	 */
 	public boolean removeShape(Shape shape) {
-		// TODO: implement
-		return false;
-
+		return shapes.remove(shape);
 	}
 
 	/**
 	 * Return the total shapes count in case this is a composite
-	 * 
+	 *
 	 * @return the total count of shapes if the shape is composite. -1 otherwise
 	 */
 	public int getShapeCount() {
-		// TODO: implement
-		return 0;
+		return shapes.size();
 
 	}
 
 	/**
 	 * Add a shape to this shape.
-	 * 
+	 *
 	 * @param shape
-	 *            The shape to add
+	 * The shape to add
 	 * @throws ShapeDoesNotSupportChildren
-	 *             if this shape is not a composite
+	 * if this shape is not a composite
 	 */
 	public void addShape(Shape shape) {
-		// TODO: Implement
+		shapes.add(shape);
 	}
 
 	public List<Shape> getShapes() {
-		// TODO: Implement
-		return null;
-
+		return shapes;
 	}
 
 	/**
 	 * @param circle
 	 * @return
 	 */
-	public List<Shape> getShapesByType(ShapeType circle) {
-		return null;
-		// TODO: Implement
+	public List<Shape> getShapesByType(ShapeType shapeType) {
+		return shapes.stream()
+				.filter(x -> x.getType() == shapeType)
+				.collect(Collectors.toList());
 	}
 
 	/**
 	 * Return all shapes that are leafs in the tree
-	 * 
+	 *
 	 * @return
 	 */
 	public List<Shape> getLeafShapes() {
-		// TODO: Implement
-		return null;
+		return shapes.stream()
+				.filter(x -> x instanceof LeafShape)
+				.collect(Collectors.toList());
 	}
 
 	/**
 	 * Factory method for the list of children of this shape
-	 * 
+	 *
 	 * @return
 	 */
 	protected List<Shape> createShapesList() {
-		return null;
-		// TODO: Implement
+		return new ArrayList<>();
 	}
+
+
 }

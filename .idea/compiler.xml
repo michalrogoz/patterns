@@ -8,11 +8,25 @@
         <outputRelativeToContentRoot value="true" />
         <module name="abstractfactory" />
         <module name="adapter" />
+        <module name="builder" />
+        <module name="composite" />
+        <module name="decorator" />
+        <module name="facade" />
+        <module name="factorymethod" />
+        <module name="singleton" />
+        <module name="state" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="abstractfactory" target="1.6" />
       <module name="adapter" target="1.6" />
+      <module name="builder" target="1.7" />
+      <module name="composite" target="1.8" />
+      <module name="decorator" target="1.6" />
+      <module name="facade" target="1.6" />
+      <module name="factorymethod" target="1.7" />
+      <module name="singleton" target="1.6" />
+      <module name="state" target="1.6" />
     </bytecodeTargetLevel>
   </component>
 </project>

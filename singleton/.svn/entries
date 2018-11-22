@@ -26,9 +26,6 @@ has-props
 
 737e350e-228b-7272-34ae-3263785c5075
 
-src
-dir
-
 pom.xml
 file
 
@@ -62,4 +59,14 @@ joaomiguel.pereira@gmail.com
 
 
 1600
+
+singleton.iml
+file
+0
+
+
+add
+
+src
+dir
 
